@@ -158,6 +158,24 @@ export default {
 </script>
 
 <style>
+/* إضافة تصميم للاقتراحات */
+.suggestions {
+  list-style: none;
+  background: rgba(255, 255, 255, 0.9);
+  max-height: 200px;
+  overflow-y: auto;
+  margin-top: 5px;
+  border-radius: 8px;
+  padding: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.suggestions li {
+  padding: 10px;
+  cursor: pointer;
+}
+.suggestions li:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
 * {
   margin: 0;
   padding: 0;
@@ -293,7 +311,7 @@ main {
 
 @media (min-width: 426px) {
   body {
-    background-color: #333333;
+    background-color: #0d1729;
     display: flex;
     justify-content: center;
     align-items: center;
